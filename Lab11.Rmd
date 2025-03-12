@@ -211,8 +211,9 @@ Were there any results from the data were unexpected? If so, state which hypothe
 
 
 
+## Formatting
 
-
+Comment your code, write full sentences, knit your file, and select all appropriate pages in Gradescope for each question!
 
 
 
