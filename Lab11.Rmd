@@ -198,7 +198,7 @@ library(plotROC)
 
 ## Question 6 (3 pts)
 
-Consider the four hypotheses that were posed at the beginning of the lab. How did the results from your data analysis compare with what you originally expected? Of the four hypotheses?
+Consider the four hypotheses that were posed as the answers to the four questions in the Pre-Lab Quiz. How did the results from your data analysis compare with what you originally expected? Of the four hypotheses?
 
 Were there any results from the data that agreed with what you originally expected? If so, state which hypotheses are in agreement. Are you more confident in those hypotheses that agreed with the data, or do you have other questions about the data themselves?
 

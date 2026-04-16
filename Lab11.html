@@ -486,10 +486,10 @@ in violation of the U.S. EPA’s PM2.5 standard (i.e. greater than 12
 <pre class="r"><code>## If working on your own computer, remember to install new packages with install.packages(&quot;name&quot;) in the console
 library(tidyverse)
 
-dat &lt;- read_csv(&quot;https://github.com/rdpeng/stat322E_public/raw/main/data/pollution.csv&quot;)</code></pre>
-<p>We can take a quick look at the top of the data frame.</p>
-<pre class="r"><code>dat %&gt;% 
-        sample_n(10)</code></pre>
+dat &lt;- read_csv(&quot;pollution.csv&quot;)</code></pre>
+<p>We can take a quick look at some rows of the data frame.</p>
+<pre class="r"><code>dat |&gt; 
+    sample_n(10)</code></pre>
 <pre><code>## # A tibble: 10 × 8
 ##    value state          zcta   lat    lon   pov zcta_pop  CMAQ
 ##    &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;
@@ -559,12 +559,9 @@ compare to what you expected to see?</p>
 has a value of PM2.5 (in the <code>value</code> column) that is in
 violation of the national standards and is 0 if that location is not in
 violation. Call the new data frame <code>datv</code>. You can use the
-<code>ifelse()</code> function for this, as in</p>
-<pre class="r"><code>datv &lt;- dat %&gt;% 
-        mutate(violation = ifelse(????, 1, 0))</code></pre>
-<p>where you can replace the <code>????</code> with a logical statement
-indicating that the <code>value</code> column is in violation of the
-national standards.</p>
+<code>ifelse()</code> function for this. Save the modified data frame as
+an object named <code>datv</code>.</p>
+<pre class="r"><code>## Your code goes below</code></pre>
 <p>Across all the locations in the dataset, what is the average level of
 PM2.5?</p>
 <pre class="r"><code>## Your code goes below</code></pre>
@@ -611,9 +608,10 @@ the model. How well does the model perform?</p>
 </div>
 <div id="question-6-3-pts" class="section level2">
 <h2>Question 6 (3 pts)</h2>
-<p>Consider the four hypotheses that were posed at the beginning of the
-lab. How did the results from your data analysis compare with what you
-originally expected? Of the four hypotheses?</p>
+<p>Consider the four hypotheses that were posed as the answers to the
+four questions in the Pre-Lab Quiz. How did the results from your data
+analysis compare with what you originally expected? Of the four
+hypotheses?</p>
 <p>Were there any results from the data that agreed with what you
 originally expected? If so, state which hypotheses are in agreement. Are
 you more confident in those hypotheses that agreed with the data, or do
@@ -624,6 +622,11 @@ which hypotheses disagreed with the data. Why do you think your original
 expectations were in disagreement with the data? (Feel free to speculate
 here.)</p>
 <p><strong>Your answer goes here. Write sentences in bold.</strong></p>
+</div>
+<div id="formatting" class="section level2">
+<h2>Formatting</h2>
+<p>Comment your code, write full sentences, knit your file, and select
+all appropriate pages in Gradescope for each question!</p>
 </div>
 
 
