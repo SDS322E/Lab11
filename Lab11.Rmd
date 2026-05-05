@@ -1,7 +1,6 @@
 ---
 title: "Lab 11"
 output: html_document
-date: 2023-04-09
 ---
 
 ```{r global_options, include=FALSE}
